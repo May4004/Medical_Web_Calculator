@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>CEB.html</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header class="header-title-1">
+            <h1>Besoins énergétiques journalier</h1>
+            <img src="C:\Users\May\Documents\L3 SPS\Cours\Informatique\Exo et brouillon\Tp4 Création site web\site-web_HARIZ_Maysoun\kcal.png" width="50" class="header-title-1-img">        
+        </header>
+        <br> <br>
+        <section class="section-1" >
+            <p class="card-1"  >Cet outil vous permet de calculer vos besoins énergétiques journaliers en fonction de votre sexe, de votre poids, de votre taille, de votre âge et de votre niveau d'activité physique.  
+                <br><br>
+                Attention : L'outil se base sur la formule de Harris et Benedict qui permet de calculer le métabolisme de base (MB) et le métabolisme total (MT).
+                Le métabolisme de base est la quantité d'énergie nécessaire pour maintenir les fonctions vitales de l'organisme au repos. 
+                Le métabolisme total est la quantité d'énergie nécessaire pour maintenir les fonctions vitales de l'organisme au repos, pour les activités quotidiennes et sportives. 
+                Celui-ci ne prend pas en compte les besoins énergétiques liés à la croissance, à la grossesse où à l'allaitement.
+            </p>
+            <br>
+            <div class="center-form">
+                <form id="Calcul-CBE" class="card-1-form">
+                    <label for="poids">Poids (kg)</label>
+                    <input type="text" id="poids" name="poids"><br><br>
+                
+                    <label for="taille">Taille (m)</label>
+                    <input type="text" id="taille" name="taille"><br><br>
+
+                    <label for="age">Age</label>
+                    <input type="text" id="age" name="age"><br><br>
+
+                    <label for="sexe">Sexe</label>
+                    <select id="sexe" name="sexe">
+                        <option value="homme">Homme</option>
+                        <option value="femme">Femme</option>
+                    </select><br><br>
+
+                    <label for="niveauactivite">Niveau d'activité physique</label>
+                    <select id="niveauactivite" name="niveauactivite">
+                        <option value="1.2">Sédentaire</option>
+                        <option value="1.375">Légèrement actif</option>
+                        <option value="1.55">Modérément actif</option>
+                        <option value="1.725">Très actif</option>
+                        <option value="1.9">Extrêmement actif</option>
+                
+                    </select><br><br>
+
+                    <button type="submit">Calculer vos besoins énergétiques journalier</button>
+                </form>
+                <div id="resultat"></div>
+                <script src="Calcul-CBE.js"></script>
+            </div> 
+        </section>
+    </body>
+</html>
